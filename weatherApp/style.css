@@ -1,0 +1,179 @@
+body {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    min-width: 300px;
+}
+
+.list_none {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 8px 20px;
+    border: 2px solid black;
+    cursor: pointer
+}
+
+/* Forms ___________________________________*/
+form {
+    margin: 50px auto;
+}
+
+input[type='text'] {
+    padding: 8px 12px;
+    border: 2px solid black;
+    outline: none;
+    font-size: 1em;
+}
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 1em;
+    font-weight: 700;
+}
+
+.output {
+    text-align: center;
+    padding: 30px 10%;
+}
+.output_bg {
+    background-color: #8af58a;
+}
+
+/* MeSSage box Design */
+/* _______________________________________________ */
+.weather_icon_image {
+    width: 120px;
+    border: 2px solid black;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+.weather_confusion_image {
+    width: 200px;
+    border: 2px solid black;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.msg {
+    align-items: center;
+    justify-content: center;
+    gap: 10px 20px;
+    flex-wrap: wrap;
+}
+
+/* Weather data Box  */
+/* ______________________________________________ */
+.weather_data {
+    border: 2px solid black;
+    background-color: #fff480e4;
+    max-width: 550px;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px;
+    margin: auto;
+}
+
+.icon_box {
+    text-align: left;
+    /* border:2px solid black; */
+    flex-grow: 1;
+}
+
+.weather_info {
+    text-align: right;
+    font-size: .8em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+    flex-grow: 1;
+    /* border:2px solid black */
+}
+
+
+/* In icon box */
+.weather_icon {
+    vertical-align: middle;
+}
+
+.temp_box {
+    display: inline-block;
+    font-size: 2.4em;
+    vertical-align: middle;
+    font-weight: 600;
+    /* border:2px solid black */
+}
+
+.temp_box .unit {
+    font-size: .5em;
+    font-weight: 400;
+    vertical-align: text-top;
+}
+
+.weather_type {
+    font-size: 1.8em;
+    /* border:2px solid black */
+}
+
+.more_info {
+    text-align: left;
+    margin-top: 10px;
+    font-size: .8em;
+    /* border:2px solid black */
+}
+
+
+/* In weather info */
+.location {
+    font-size: 1.2em;
+    font-weight: 700;
+    /* border:2px solid black; */
+}
+
+.sm-temp_box img {
+    width: 40px;
+}
+
+.divider {
+    border: 1.2px solid black;
+    height: 100%;
+    margin: 0px 5px;
+}
+
+
+
+/* More General CLasses */
+/* _________________________________ */
+
+.big {
+    font-size: 3em;
+}
+
+.display_head {
+    font-size: 1.5em;
+    font-weight: 500;
+}
+
+.error {
+    color: red;
+    font-size: 1.5em;
+    text-align: center;
+    margin-top: 20px;
+    text-transform: capitalize;
+}
+
+@media screen and (width< 628px) {
+    body {
+        font-size: 17px;
+    }
+}

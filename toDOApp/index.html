@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To do App</title>
+    <link rel="stylesheet" href="./style/style.css">
+</head>
+<body>
+    <div class="form_box">
+    <h1>To do App</h1>
+    <form action="./index.html" class="insert_form">
+        <label for="list_input">Write Name : </label>
+        <input type="text" id="list_input">
+        <div>
+            <button type="submit" class="add_btn">Add</button>
+            <a href="./../index.html" target="_self">
+                <button type="button" class="back_btn">Back</button>
+            </a>
+        </div>
+    </form>
+    </div>
+
+    <div class="items">
+        <form action="./notes_items.html" target="_self" method="get" id="item_name" hidden>
+            <input type="text" name="itemName" id="itemName" hidden>
+        </form>
+        <h2>TO DO Items</h2>
+        <ol>
+        </ol>
+    </div>
+    
+    <script src="./index.js"></script>
+</body>
+</html>

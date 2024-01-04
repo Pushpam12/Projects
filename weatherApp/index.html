@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <H2>Weather</H2>
+
+    <div class="output output_bg">
+        <div class="msg">
+            <img src="https://cdn.vectorstock.com/i/1000x1000/79/35/happy-sun-behind-the-cloud-vector-5167935.webp"
+                class="weather_icon_image">
+            <div class="display_head">Search for Weather</div>
+        </div>
+
+        <div class="weather_data" style="display:none">
+            <div class="icon_box">
+                <img class="weather_icon" src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png">
+                <div class="temp_box">
+                    <span class="temp">30.oo</span>
+                    <span class="unit"><sup>o</sup>C</span>
+                </div>
+
+                <div class="weather_type">Clouds</div>
+
+                <ul class="more_info list_none">
+                    <li><b>Humidity</b> :<span class="humidity">5</span>%</li>
+                    <li><b>Wind</b> :<span class="wind">5</span>km/hr</li>
+                </ul>
+            </div>
+
+            <div class="weather_info">
+                <div>
+                    <div class="location">Darbhanga, India</div>
+                    <div class="weather_desc">Mostly Cloudy</div>
+                </div>
+
+                <div class="sm-temp_box">
+                    <img class="weather_icon" src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png">
+                    <span class="temp_min">30</span><sup>o</sup>C
+                    <span class="divider"></span>
+                    <span class="temp_max">35</span><sup>o</sup>C
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <form action="" method="get">
+        <label for="city_name">City : </label>
+        <input type="text" name="city" id="city_name" placeholder="City Name">
+
+        <div>
+            <button type="submit" class="btn" id="search_btn">Search</button>
+        </div>
+    </form>
+
+    <script src="./index.js"></script>
+</body>
+
+</html>

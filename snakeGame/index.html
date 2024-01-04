@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snak Game </title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playpen+Sans&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+    <div class="playArea">
+        <div class="board"></div>
+
+        <div class="scorebox">
+            <b>Score :</b> <span class="score">0</span> <br>
+            <b>HighScore :</b> <span class="highScore">0</span>
+        </div>
+    </div>
+
+    <div class="info">Use arrow keys to move snake.</div>
+    <a href="./index.html" class="restart">Restart</a>
+
+    <div class="moveBtns">
+        <button type="button" value="ArrowLeft" class="double">
+            <img src="./assets/images/arrow-up.png" alt="" srcset="" class="leftarrow">
+        </button>
+        <div>
+            <button type="button" value="ArrowUp">
+                <img src="./assets/images/arrow-up.png" alt="" srcset="" class="uparrow">
+            </button>
+            <button type="button" value="ArrowDown">
+                <img src="./assets/images/arrow-up.png" alt="" srcset="" class="downarrow">
+            </button>
+        </div>
+        <button type="button" value="ArrowRight" class="double">
+            <img src="./assets/images/arrow-up.png" alt="" srcset="" class="rightarrow">
+        </button>
+    </div>
+
+    <script src="./snake.js"></script>
+</body>
+
+</html>

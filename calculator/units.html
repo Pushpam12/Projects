@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="form_box">
+
+        <h1>Maths !</h1>
+
+        <form action="./index.html">
+            <div class="input_area">
+
+                <div class="measure_1 measurebox">
+                    <input type="number" class="measure1_1val">
+                    <input type="number" class="measure1_2val">
+                    <input type="number" class="measure1_3val">
+                </div>
+                <div class="units_error" style="display:none">
+                    <img src="./assets/images/alarm-clock-angry.jpg" width="200px"><br>
+                    Error : Properly set the time.<br>
+                     hr(0-12), min(0-60), sec(0-60).
+                </div>
+
+                <div class="am-pm_box" style="display: none;">
+                <input type="radio" name="mode" id="am" >a.m &nbsp;
+                <input type="radio" name="mode" id="pm" >p.m &nbsp;
+                <span><img src="./assets/images/up-arrow.png" width="30px"> Time</span>
+                </div>
+                
+                <div class="measure_2 measurebox">
+                    <input type="number" class="measure2_1val">
+                    <input type="number" class="measure2_2val">
+                    <input type="number" class="measure2_3val">
+                </div>
+
+                <div class="units_mul_option" style="display: none;">
+                    Multiply|Divide<input type="radio" name="unitsOp" id="mul/div">
+                    Add|Subtract<input type="radio" name="unitsOp" id="add/sub">
+                </div>
+
+                <div>
+                    <label for="measurement_Type">Unit : </label>
+                    <select name="measureType" id="measurement_Type" 
+                    class="option_box measurement_Type">
+                        <optgroup label="Length">
+                            <option value="km_m">Km - m type</option>
+                            <option value="m_cm">m - cm type</option>
+                            <option value="cm_mm">cm - mm type</option>
+                        </optgroup>
+
+                        <optgroup label="Time">
+                            <option value="hr_min_sec">hr : min : sec </option>
+                            <option value="am_pm"> AM | PM </option>
+                        </optgroup>
+
+                        <optgroup label="Volume">
+                            <option value="l_ml">L - mL type</option>
+                        </optgroup>
+
+                        <optgroup label="Mass">
+                            <option value="kg_g">Kg - g type</option>
+                        </optgroup>
+                    </select>
+                </div>
+
+                <div class="am-pm_box" style="display: none;">
+                    Duration
+                   <span><img src="./assets/images/up-arrow.png" width="30px"></span>
+               </div>
+
+            </div>
+
+
+
+            <!-- Buttons Area -->
+            <div>
+                <div class="buttons_box">
+                    <div class="add_sub">
+                        <button type="submit" class="btn measureCalc_btn" value="Add">
+                            <img src="./assets/images/plus.png">
+                        </button>
+                        <button type="submit" class="btn measureCalc_btn" value="Subtract">
+                            <img src="./assets/images/minus.png">
+                        </button>
+                    </div>
+
+                    <div class="mul_div" style="display: none;">
+                        <button type="submit" class="btn measureCalc_btn" value="Multiply">
+                            <img src="./assets/images/cross.png">
+                        </button>
+                        <button type="submit" class="btn measureCalc_btn" value="Divide">
+                            <img src="./assets/images/divide.png">
+                        </button>
+                    </div>
+                
+                    <a href="./index.html" class="btn">
+                        <img src="./assets/images/turn-left.png">
+                    </a>
+                        
+                    <button type="reset" class="btn">
+                        <img src="./assets/images/letter-c.png" class="reset_icon">
+                    </button>
+                    
+                </div>
+            </div>
+
+        </form>
+
+        <div class="output">
+            <h2>Output</h2>
+        </div>
+    </div>
+
+    <script src="./units.js"></script>
+</body>
+
+</html>

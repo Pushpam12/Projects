@@ -1,0 +1,104 @@
+* {
+    box-sizing: border-box;
+}
+body {
+
+    font-family :Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+    min-width: 320px;
+}
+.form_box {
+    background-color: #fbc02d;
+    width: 49%; 
+    min-width: 300px;
+    flex-grow: 1;
+    padding: 30px;
+    font-size:22px;
+}
+.items {
+    background-color: #ffe7c0;
+    border-left: 2px solid black;
+    min-height: 100vh;
+    width: 50%;
+    min-width: 300px;
+    margin: auto;
+    flex-grow: 1;
+    text-align: center;
+}
+
+li {
+    font-family: Arial;
+    color: green;
+    margin: 10px 20px 10px 0px;
+    border-bottom: 2px solid black;
+    padding:10px  120px 5px 0px;
+    word-wrap: break-word;
+    position: relative;
+    list-style:lower-roman;
+    text-align: left;
+    font-size: 1.2em;
+}
+
+li *{
+    margin: 0;
+}
+
+.insert_form {
+    border: 2px solid black;
+    background-color: white;
+    border-radius: 12px;
+    padding: 20px 30px;
+    font-size: 20px;
+    width: fit-content;
+
+}
+label{
+    display: inline-block;
+    margin: 10px 15px;
+    margin-left: 0px;
+}
+input {
+    border:none;
+    background-color: transparent;
+    border-bottom: 2px solid black;
+    border-radius: 0px;
+    width: 200px;
+    font-size:1em;
+    padding: 8px 10px;
+}
+
+input:focus {
+    outline: none;
+}
+
+.add_btn,
+.btn, .back_btn {
+    padding: 8px 20px;
+    border-radius: 8px;
+    border: none;
+    background-color: #178d2a;
+    color: white;
+    font-weight: 600;
+    font-size:18px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+.back_btn{
+    background-color: #fbc02d;
+}
+
+.btn {
+    background-color: #fbc02d;
+    position: absolute;
+    right: 5px;
+    bottom: 0px;
+    margin: 2px;
+}
+
+.delete_btn{
+    background-color: #c00;
+}
+

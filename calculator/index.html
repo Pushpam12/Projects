@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="form_box">
+        <h1>Maths !</h1>
+
+        <form action="./index.html">
+            <div class="input_area">
+
+                <div class="nums_box" data-music-key="D">
+                    <input type="number" id="num1">
+                    <input type="number" id="num2">
+                    <input type="number" id="num3" style="display: none;">
+                    <input type="number" id="num4" style="display: none;">
+                    <div class="error">
+                        <img src="./assets/images/book cry.png" width="180px"><br>
+                        <p>Aisa input <br>Ye kya hai!</p>
+                    </div>
+                </div>
+
+                <select name="options" id="options" class="option_box">
+                    <option value="Simple">Simple</option>
+                    <option value="Power">Power</option>
+                    <option value="HCF">Hcf</option>
+                    <option value="LCM">Lcm</option>
+                    <option value="Table">Table</option>
+                    <option value="Factors">Factors</option>
+                    <option value="IsLeapYear">Leap year</option>
+                    <option value="Percent">Percent</option>
+                    <option value="PercentOfValue">Percentage of</option>
+                    <option value="CompoundInterest">Compound Interest</option>
+                    <option value="SimpleInterest">Simple Interest</option>
+                    <option value="Measurement">Measurement</option>
+                </select>
+            </div>
+
+    
+
+            <!-- Buttons Area -->
+            <div class="buttons_box">
+
+
+                <div class="simple_arithmatic">
+                    <button type="button" class="btn cal_btn" value="Add" data-music-key="B">
+                        <img src="./assets/images/plus.png">
+                    </button>
+
+                    <button type="button" class="btn cal_btn" value="Subtract" data-music-key="C">
+                        <img src="./assets/images/minus.png">
+                    </button>
+
+                    <button type="button" class="btn cal_btn" value="Multiply" data-music-key="F">
+                        <img src="./assets/images/cross.png">
+                    </button>
+
+                    <button type="button" class="btn cal_btn" value="Divide" data-music-key="E">
+                        <img src="./assets/images/divide.png" class="divide_icon">
+                    </button>
+
+                    <select name="music" id="music" class="music_box">
+                        <option value="null">Music - Off</option>
+                        <option value="0">ON</option>
+                        <!-- <option value="1">L-2</option>
+                        <option value="2">L-3</option> -->
+                    </select>
+                
+                </div>
+
+                <button type="button" class="calculate_btn" style="display: none;">
+                    Calculate
+                </button>
+
+            </div>
+            <div class="addn_btns">
+                <a href="./../index.html" class="btn">
+                    <img src="./assets/images/turn-left.png">
+                </a>
+                    
+                <button type="reset" class="btn reset-btn">
+                    <img src="./assets/images/letter-c.png" class="reset_icon">
+                </button>
+            </div>
+        </form>
+
+        <div class="output">
+            <h2>Output</h2>
+        </div>
+    </div>
+
+    <script src="./index.js"></script>
+</body>
+
+</html>
