@@ -9,6 +9,5 @@ This is the repository where I've hosted all the coding stuffs.
 
 ## Main Page You can visit here.
 
-***
-[ My Projects ]( https://Pushpam12.github.io )
-***
+
+** [ My Projects ]( https://Pushpam12.github.io ) **
