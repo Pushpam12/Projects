@@ -7,6 +7,8 @@ This is the repository where I've hosted all the coding stuffs.
 2. [ Notes Taking App ]( https://Pushpam12.github.io/Projects/toDOApp )
 3. [ Weather App ]( https://Pushpam12.github.io/Projects/weatherApp )
 
+![Pic of doraemon](https://e7.pngegg.com/pngimages/546/881/png-clipart-doraemon-suneo-honekawa-doraemon-drawing-doraemon-s-photography-vertebrate-thumbnail.png)
+
 ## Main Page You can visit here.
 
 
